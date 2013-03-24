@@ -1,4 +1,4 @@
-package storm.contrib.core;
+package storm.clockspout;
 
 import java.util.List;
 

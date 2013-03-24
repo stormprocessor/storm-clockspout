@@ -1,11 +1,11 @@
-package storm.contrib.core;
+package storm.clockspout;
 
 import java.util.List;
 import java.util.Map;
 
 import backtype.storm.spout.SpoutOutputCollector;
 import backtype.storm.task.TopologyContext;
-import backtype.storm.topology.IRichSpout;
+import backtype.storm.topology.base.BaseRichSpout;
 import backtype.storm.utils.Utils;
 
 /**
@@ -18,7 +18,7 @@ import backtype.storm.utils.Utils;
  * @author Adrian Petrescu <apetresc@gmail.com>
  *
  */
-public abstract class ClockSpout implements IRichSpout {
+public abstract class ClockSpout extends BaseRichSpout {
 	private SpoutOutputCollector collector;
 	
 	protected final String streamId;
@@ -86,9 +86,6 @@ public abstract class ClockSpout implements IRichSpout {
 	@Override
 	public final void fail(Object msgId) { }
 
-	@Override
-	public final boolean isDistributed() {
-		return false;
-	}
+
 
 }
