@@ -7,10 +7,10 @@
     <version>0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>storm-contrib-core</artifactId>
+  <artifactId>storm-clockspout</artifactId>
   <packaging>jar</packaging>
-  <name>storm-contrib-core</name>
-  <description>Core dependencies and components for storm-contrib</description>
+  <name>storm-clockspout</name>
+  <description>A tick based spout for Storm</description>
 
   <dependencies>
     <dependency>
